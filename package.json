@@ -10,8 +10,6 @@
     "simulate": "hardhat run scripts/simulate.ts --network whitechain",
     "encode": "hardhat run scripts/encodeArgs.ts",
     "encode:deployment": "hardhat run scripts/encodeArgs.ts -- --from-deployment",
-    "verify:input": "ts-node scripts/exportStandardJson.ts",
-    "flatten": "mkdir -p flat && hardhat flatten src/ResourceNFT1155.sol > flat/ResourceNFT1155.flattened.sol && hardhat flatten src/ItemNFT721.sol > flat/ItemNFT721.flattened.sol && hardhat flatten src/MagicToken.sol > flat/MagicToken.flattened.sol && hardhat flatten src/CraftingSearch.sol > flat/CraftingSearch.flattened.sol && hardhat flatten src/Marketplace.sol > flat/Marketplace.flattened.sol"
   },
   "keywords": [
     "blockchain",
