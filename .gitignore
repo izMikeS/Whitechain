@@ -1,0 +1,19 @@
+cache/
+out/
+.env
+.idea/
+broadcast/
+lib/
+
+# Hardhat files
+node_modules/
+artifacts/
+typechain-types/
+coverage/
+coverage.json
+deployment.json
+.env.local
+
+# TypeScript
+dist/
+*.tsbuildinfo

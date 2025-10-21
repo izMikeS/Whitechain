@@ -1,0 +1,48 @@
+{
+  "name": "whitechain-cossack-business",
+  "version": "1.0.0",
+  "description": "Cossack Business - NFT game on Whitechain Testnet",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "test:coverage": "hardhat coverage",
+    "deploy": "hardhat run scripts/deploy.ts --network whitechain",
+    "simulate": "hardhat run scripts/simulate.ts --network whitechain",
+    "encode": "hardhat run scripts/encodeArgs.ts",
+    "encode:deployment": "hardhat run scripts/encodeArgs.ts -- --from-deployment",
+    "verify:input": "ts-node scripts/exportStandardJson.ts",
+    "flatten": "mkdir -p flat && hardhat flatten src/ResourceNFT1155.sol > flat/ResourceNFT1155.flattened.sol && hardhat flatten src/ItemNFT721.sol > flat/ItemNFT721.flattened.sol && hardhat flatten src/MagicToken.sol > flat/MagicToken.flattened.sol && hardhat flatten src/CraftingSearch.sol > flat/CraftingSearch.flattened.sol && hardhat flatten src/Marketplace.sol > flat/Marketplace.flattened.sol"
+  },
+  "keywords": [
+    "blockchain",
+    "solidity",
+    "nft",
+    "erc1155",
+    "erc721",
+    "hardhat",
+    "whitechain"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@openzeppelin/contracts": "^5.4.0",
+    "@typechain/ethers-v6": "^0.5.0",
+    "@typechain/hardhat": "^9.0.0",
+    "@types/chai": "^4.3.0",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "^20.0.0",
+    "chai": "^4.3.0",
+    "dotenv": "^16.0.0",
+    "ethers": "^6.10.0",
+    "hardhat": "^2.19.0",
+    "hardhat-gas-reporter": "^1.0.0",
+    "solidity-coverage": "^0.8.0",
+    "ts-node": "^10.9.0",
+    "typechain": "^8.3.0",
+    "typescript": "^5.3.0"
+  }
+}
