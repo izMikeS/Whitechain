@@ -9,7 +9,7 @@
     "deploy": "hardhat run scripts/deploy.ts --network whitechain",
     "simulate": "hardhat run scripts/simulate.ts --network whitechain",
     "encode": "hardhat run scripts/encodeArgs.ts",
-    "encode:deployment": "hardhat run scripts/encodeArgs.ts -- --from-deployment",
+    "encode:deployment": "hardhat run scripts/encodeArgs.ts -- --from-deployment"
   },
   "keywords": [
     "blockchain",
