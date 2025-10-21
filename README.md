@@ -65,6 +65,9 @@ npm run compile
 npm test
 npm run test:coverage
 ```
+- Lines/statements/functions: 100%.
+- Branches: high (guards like `nonReentrant` are not triggered).
+
 
 ## 5. Deploy
 ```bash
@@ -97,16 +100,7 @@ npx ts-node scripts/exportStandardJson.ts ResourceNFT1155
 # -> verify/ResourceNFT1155.standard-input.json
 ```
 
-## 8. Tests & Coverage
-Run tests and coverage:
-```bash
-npm test
-npm run test:coverage
-```
-- Lines/statements/functions: 100%.
-- Branches: high (guards like `nonReentrant` are not triggered).
-
-## 9. Layout
+## 8. Layout
 ```
 src/
   ResourceNFT1155.sol
